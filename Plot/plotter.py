@@ -9,7 +9,6 @@ import time
 
 # import gmplot package 
 import gmplot 
-apikey="AIzaSyDoAR1gjSJnC4fIwUmCAFiw_z4IVMrIDBo"
 
 m2feet = 3.28084
 m2NM = 0.000539957
