@@ -1,0 +1,45 @@
+{
+    "OpenSky": {
+        "filename": "./opensky/states_2022-06-27-23.csv"
+    },
+    "transformations": {
+        "hide_modeS": 0.4,
+        "filter_pos": {
+            "lat": 49.58558260032726,
+            "lon": 9.590482986840815,
+            "thr": 20
+        },
+        "filter_pos_BCN": {
+            "lat": 41.290652474073184,
+            "lon": 2.0801125019352416,
+            "thr": 2.5
+        },
+        "drop_no_id": true,
+        "pos_only": true
+    },
+    "associator": [
+        {
+            "class": "ml",
+            "train": {
+                "generate_data": true,
+                "X_dataset": "X_new.pkl",
+                "Y_dataset": "Y_new.pkl",
+                "MAX_TDIFF": 30,
+                "MAX_POSDIFF": 10000,
+                "SCALER_MODE": "scaler",
+                "split": 0.8
+            },
+            "model": "./Data/OPSK_Trained.keras",
+            "scaler": "./OPSK_robust_scaler.pkl"
+        }
+    ],
+    "evaluator": {
+        "output": [
+            "cmd"
+        ],
+        "path": "evaluation_2025-01-28"
+    },
+    "debug": {
+        "data": true
+    }
+}

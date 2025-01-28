@@ -1,0 +1,12 @@
+gmplot==1.4.1
+imbalanced_learn==0.12.4
+imblearn==0.0
+keras==3.6.0
+matplotlib==3.10.0
+numpy==2.2.2
+pandas==2.2.3
+pymap3d==3.1.0
+scikit_learn==1.6.1
+seaborn==0.13.2
+SQLAlchemy==2.0.36
+tensorflow==2.18.0
